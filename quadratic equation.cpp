@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 int main() {
-    int a, b, c, discriminant, root1, root2, realPart, imagPart;
+    int a, b, c, discriminant, root1, root2, RP, iP;
     printf("Enter coefficients a, b and c: ");
     scanf("%d %d %d", &a, &b, &c);
 
@@ -20,9 +20,9 @@ int main() {
 
     
     else {
-        realPart = -b / (2 * a);
-        imagPart = sqrt(-discriminant) / (2 * a);
-        printf("root1 = %d+%d and root2 = %d-%d", realPart, imagPart, realPart, imagPart);
+        RP = -b / (2 * a);
+        iP = sqrt(-discriminant) / (2 * a);
+        printf("root1 = %d+%d and root2 = %d-%d",RP,RP,iP);
     }
 
     return 0;
